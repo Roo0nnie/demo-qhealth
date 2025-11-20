@@ -18,7 +18,7 @@ const StartButton = ({ isLoading, onClick, isMeasuring }: IStartButton) => {
 			) : (
 				<div
 					onClick={onClick}
-					className="flex justify-center items-center bg-[#2d5016] rounded-full cursor-pointer h-full w-full transition-all duration-300 shadow-md hover:bg-[#4a7c2a] hover:scale-105 hover:shadow-lg active:scale-95"
+					className="flex justify-center items-center bg-[#271ebf] rounded-full cursor-pointer h-full w-full transition-all duration-300 shadow-md hover:bg-[#4a7c2a] hover:scale-105 hover:shadow-lg active:scale-95"
 				>
 					<img
 						src={isMeasuring ? Stop : Play}

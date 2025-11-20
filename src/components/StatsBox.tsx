@@ -50,7 +50,7 @@ const StatsBox = ({
 			{/* Value */}
 			<div className="flex flex-col items-center gap-1">
 				{!riskLevel && (
-					<div className="text-lg font-bold text-[#2d5016]">{value ?? "--"}
+					<div className="text-lg font-bold text-[#271ebf]">{value ?? "--"}
 					{unit && value !== "--" && <span className="text-xs text-gray-500">{unit}</span>}</div>
 				)}
 					

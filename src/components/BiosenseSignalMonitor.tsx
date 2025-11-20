@@ -23,8 +23,7 @@
 	import ResultsModal from "./ResultsModal"
 	import { Alert } from "./alert"
 	import { getQHealthAPI } from "../services/qhealthClientAPI"
-	import { sendResultsToGaleAPI } from "../services/galeExternalAPI"
-	import { MeasurementResults, VideoReadyState } from "../types"
+	import { VideoReadyState } from "../types"
 	import { SessionStatus } from "../types/api"
 	import StartButton from "./StartButton"
 	import TopBar from "./TopBar"
@@ -174,20 +173,7 @@
 				}
 
 				const finalVitalSigns = vitalSignsRef.current
-				try {
-					const measurementResults: MeasurementResults = {
-						sessionId,
-						vitalSigns: finalVitalSigns,
-						timestamp: Date.now(),
-					}
-
-					setHasSentResults(true)
-
-					await sendResultsToGaleAPI(measurementResults)
-					
-		
-				} catch (err) {
-				}
+				setHasSentResults(true)
 			}
 
 			waitForDataAndSend()

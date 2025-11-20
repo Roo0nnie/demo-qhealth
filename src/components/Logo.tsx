@@ -1,6 +1,6 @@
 import React from "react"
 
-import logo from "../assets/gaia.svg"
+import logo from "../assets/qb.svg"
 
 const Logo = () => {
 	return (

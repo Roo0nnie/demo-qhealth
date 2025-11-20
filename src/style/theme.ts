@@ -69,7 +69,7 @@ export const lightTheme = {
 	colors: {
 		// Primary colors - Earth tones and natural greens
 		primary: {
-			main: "#2d5016", // Deep forest green
+			main: "#271ebf", // Deep forest green
 			light: "#4a7c2a", // Medium green
 			dark: "#1a3009", // Dark forest green
 			contrast: "#ffffff",

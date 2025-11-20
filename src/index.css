@@ -10,7 +10,7 @@
 		--card-foreground: 0 0% 18%; /* #2d2d2d */
 		--popover: 0 0% 100%; /* #ffffff */
 		--popover-foreground: 0 0% 18%; /* #2d2d2d */
-		--primary: 95 53% 18%; /* #2d5016 */
+		--primary: 95 53% 18%; /* #271ebf */
 		--primary-foreground: 0 0% 100%; /* #ffffff */
 		--secondary: 32 32% 45%; /* #8b6f47 */
 		--secondary-foreground: 0 0% 100%; /* #ffffff */
@@ -25,7 +25,7 @@
 		--success-foreground: 0 0% 100%; /* #ffffff */
 		--border: 45 10% 88%; /* #e5e5e0 */
 		--input: 45 10% 88%; /* #e5e5e0 */
-		--ring: 95 53% 18%; /* #2d5016 */
+		--ring: 95 53% 18%; /* #271ebf */
 		--radius: 0.5rem;
 	}
 

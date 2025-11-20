@@ -140,7 +140,7 @@ const App = () => {
 					<button
 						onClick={handleRetryCameraPermission}
 						disabled={isRetryingPermission}
-						className="mt-2 px-6 py-3 bg-[#2d5016] text-white rounded-lg font-semibold text-base transition-all duration-300 shadow-md hover:bg-[#4a7c2a] hover:scale-105 hover:shadow-lg active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+						className="mt-2 px-6 py-3 bg-[#271ebf] text-white rounded-lg font-semibold text-base transition-all duration-300 shadow-md hover:bg-[#4a7c2a] hover:scale-105 hover:shadow-lg active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
 					>
 						{isRetryingPermission ? "Requesting Permission..." : "Allow Camera & Refresh"}
 					</button>
