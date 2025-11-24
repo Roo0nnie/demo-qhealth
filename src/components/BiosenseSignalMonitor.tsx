@@ -81,7 +81,7 @@
 	// Reset hasSentResults when sessionId changes
 	useEffect(() => {
 		setHasSentResults(false)
-		setIsResultsModalOpen(true)
+		setIsResultsModalOpen(false)
 		setIsRefreshing(false)
 	}, [sessionId])
 
