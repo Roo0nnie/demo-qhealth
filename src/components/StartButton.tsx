@@ -12,7 +12,7 @@ export interface IStartButton {
 
 const StartButton = ({ isLoading, onClick, isMeasuring }: IStartButton) => {
 	return (
-		<div className="flex justify-center items-center h-[58px] w-[58px] md:h-[88px] md:w-[88px]">
+		<div className="flex justify-center items-center h-[64px] w-[64px] sm:h-[72px] sm:w-[72px] md:h-[80px] md:w-[80px] lg:h-[88px] lg:w-[88px]">
 			{isLoading ? (
 				<Spinner />
 			) : (

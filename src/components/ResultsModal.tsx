@@ -26,7 +26,7 @@ const ResultsModal = ({ isOpen, vitalSigns, onClose }: ResultsModalProps) => {
 				<DialogHeader className="px-3 pt-6 pb-6 border-b shadow-sm flex-shrink-0 text-left">
 					<DialogTitle className="text-base font-bold text-gray-800">Measurement Results</DialogTitle>
 				</DialogHeader>
-				<div className="flex-1 overflow-y-auto min-h-0">
+				<div className="flex-1 overflow-y-auto space-y-4 pr-2">
 					<Stats vitalSigns={vitalSigns} isMobile={true} />
 				</div>
 			</DialogContent>

@@ -25,19 +25,30 @@ import {
 
 const Wrapper = ({
 	isMobile = false,
+	inModal = false,
 	children,
 	className,
 }: {
 	isMobile?: boolean
+	inModal?: boolean
 	children: React.ReactNode
 	className?: string
 }) => {
+	// When in modal, render as simple container without extra styling
+	if (inModal) {
+		return (
+			<div className={cn("w-full", className)}>
+				{children}
+			</div>
+		)
+	}
+
 	return (
 		<div
 			className={cn(
 				"flex flex-col items-center justify-center min-h-[80px] bg-[rgba(255,255,255,0.95)] rounded-[3px] p-5 box-border transition-colors duration-300 w-full",
 				isMobile
-					? "relative overflow-visible"
+					? "relative"
 					: "absolute max-h-[400px] overflow-y-auto bottom-[30px]",
 				"md:max-h-[500px] md:p-6",
 				className
@@ -57,6 +68,10 @@ interface IStats {
 	 *  Whether this is displayed in mobile results section (below button)
 	 */
 	isMobile?: boolean
+	/**
+	 *  Whether this is displayed inside a modal
+	 */
+	inModal?: boolean
 }
 
 // Helper function to format different value types matching API format
@@ -262,7 +277,7 @@ function getRiskLevel(key: string, vitalSigns: VitalSigns): RiskLevel | null {
 	}
 }
 
-const Stats = ({ vitalSigns, isMobile = false }: IStats) => {
+const Stats = ({ vitalSigns, isMobile = false, inModal = false }: IStats) => {
 	const [selectedVitalSignKey, setSelectedVitalSignKey] = useState<string | null>(null)
 
 	const categorizedStats = useMemo(() => {
@@ -423,7 +438,7 @@ const Stats = ({ vitalSigns, isMobile = false }: IStats) => {
 
 	return (
 		<>
-			<Wrapper isMobile={isMobile}>
+			<Wrapper isMobile={isMobile} inModal={inModal}>
 				<div className="w-full space-y-6">
 					{Object.entries(categorizedStats).map(([category, stats]) => (
 						<CategorySection key={category} category={category} count={stats.length}>

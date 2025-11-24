@@ -295,9 +295,9 @@
 						{isVideoReady() && (
 							<div
 								className={cn(
-									"absolute bottom-[70px] left-1/2 -translate-x-1/2 z-[3]",
+									"absolute bottom-[60px] sm:bottom-[70px] md:bottom-[80px] left-1/2 -translate-x-1/2 z-[3]",
 									"flex items-center justify-center",
-									"md:left-auto md:right-[60px] md:translate-x-0 md:bottom-[70px]"
+									"md:left-auto md:right-[60px] md:translate-x-0"
 								)}
 							>
 								<StartButton
