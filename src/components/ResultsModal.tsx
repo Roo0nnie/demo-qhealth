@@ -22,11 +22,11 @@ const ResultsModal = ({ isOpen, vitalSigns, onClose }: ResultsModalProps) => {
 
 	return (
 		<Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-			<DialogContent className="max-w-4xl max-h-[90vh] flex flex-col p-0 overflow-hidden [&>button]:top-6">
+			<DialogContent className="max-w-4xl max-h-[85vh] flex flex-col p-0 overflow-hidden [&>button]:top-6">
 				<DialogHeader className="px-3 pt-6 pb-6 border-b shadow-sm flex-shrink-0 text-left">
 					<DialogTitle className="text-base font-bold text-gray-800">Measurement Results</DialogTitle>
 				</DialogHeader>
-				<div className="flex-1 overflow-y-auto space-y-4 pr-2">
+				<div className="flex-1 overflow-y-auto space-y-4 px-3 py-4 min-h-0">
 					<Stats vitalSigns={vitalSigns} isMobile={true} />
 				</div>
 			</DialogContent>

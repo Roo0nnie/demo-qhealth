@@ -46,11 +46,7 @@ const Wrapper = ({
 	return (
 		<div
 			className={cn(
-				"flex flex-col items-center justify-center min-h-[80px] bg-[rgba(255,255,255,0.95)] rounded-[3px] p-5 box-border transition-colors duration-300 w-full",
-				isMobile
-					? "relative"
-					: "absolute max-h-[400px] overflow-y-auto bottom-[30px]",
-				"md:max-h-[500px] md:p-6",
+				"flex flex-col items-center justify-center rounded-[3px] p-5 box-border transition-colors duration-300 w-full relative",
 				className
 			)}
 		>
